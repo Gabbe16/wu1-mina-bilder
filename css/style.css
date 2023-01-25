@@ -1,7 +1,15 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    background-color: #575757;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+    background-color: #898a89;
+    padding: 1rem;
 }
 
 
@@ -24,9 +32,46 @@ ul {
 }
 
 
+nav>ul {
+    display: flex;
+    background-color: #737373;
+    padding: 1rem;
+    margin: 0;
+    list-style: none;
+    font-size: 2rem;
+    gap: 2rem;
+}
+
+
+a:hover {
+    color: #bfbfbf;
+}
+
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 1rem;
+}
+
+
+figure {
+    position: relative;
+}
+
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.7);
 }
